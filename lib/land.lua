@@ -64,7 +64,7 @@ function Land:init()
   end
   local params_menu={
     {id="landclear",name="clear",min=1,max=2,div=1,default=1,values={"e3 to clear","cleared"},action=do_clear},
-    {id="db",name="db",engine=true,min=-96,max=16,exp=false,div=0.25,default=-6,unit="dB"},
+    {id="db",name="db",engine=true,min=-96,max=16,exp=false,div=1,default=-6,unit="dB"},
     {id="bars",name="grains",min=0,max=6,exp=false,div=1,default=6,unit="",action=function(x) engine.land_set_num(self.id,x) end},
     {id="wet",name="reverb",engine=true,min=0,max=1,exp=false,div=0.05,default=0.2,unit=""},
     {id="boundary_start",name="boundary start",min=0,max=127,exp=false,div=0.2,default=0,unit="%",action=update_boundary},
